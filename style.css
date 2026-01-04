@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(17, 17, 17);
+}
+
+.flex {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* -------- SCROLL BARS --------- */
+/* WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.3) transparent;
+}
+
+
+/* ------------- HEADER -------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    padding-top: 20px;
+}
+
+header ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+header ul li {
+    padding: 0px 10px;
+}
+
+header>h2{
+    margin-left: 20px;
+}
+
+/* ------------- MAIN -------------*/
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+    height: 400px;
+    gap: 70px;
+    background: linear-gradient(180deg,rgb(22, 22, 22),#0d111f);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.intro h1 {
+    margin-bottom: 10px;
+}
+
+.intro > img {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    flex-shrink: 0;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+
+/* ------------- SKILLS SECTION -------------*/
+
+.skill_set {
+    margin-top: 100px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+    width: 50%;
+    padding-bottom: 200px;
+}
+
+.skill_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    overflow-y: auto;
+    background: linear-gradient(90deg,#0d111f,rgb(22, 22, 22));
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: background-color 0.4s ease, 
+                transform 1s ease;
+}
+
+.skill_box:hover{
+    background: #121e31;
+    transform: scale(1.15);
+}
+
+.skill_box img {
+    width: 30px;
+}
+
+/* ------------- CONTACT ME -------------*/
+
+.contact_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background: linear-gradient(180deg,#0d111f,rgb(22, 22, 22));
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: inset 3px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact_me h1 {
+    margin-bottom: 10px;
+}
+
+.contacts_logos {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contact_me div {
+    margin-bottom: 10px;
+}
+
+.contact_me>h1 {
+    margin-bottom: 20px;
+}
