@@ -52,13 +52,16 @@ ul {
 
 
 /* ------------- HEADER -------------*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(22, 22, 22);
-    padding-top: 20px;
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
 }
+
 
 header ul{
     display: flex;
@@ -67,6 +70,7 @@ header ul{
 
 header ul li {
     padding: 0px 10px;
+    cursor: pointer;
 }
 
 header>h2{
